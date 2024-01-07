@@ -1,0 +1,99 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <title>BINUS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./images/favicon.ico">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="./css/login.css">
+
+    <!--[if lt IE 9]>
+			<script src="js/html5shiv.js"></script>
+		<![endif]-->
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-41253388-3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-41253388-3');
+    </script>
+</head>
+
+<body>
+    <style>
+        .hidden-element{
+            display:none;
+        }
+
+        #btnLoginSSO{
+            background-image: url(https://newbinusmaya.binus.ac.id/static/media/btn-logo-sign-in-with-microsoft.f0e3a267.png);
+            border: 3px solid #028ed5;
+            outline: none;
+            border-radius: 6px;
+            background-size: cover;
+            background-position: 50%;
+        }
+        #btnLoginSSO:hover{
+            filter: drop-shadow(0 5px 5px #777);
+            transition: all 250ms;
+        }
+        #btnGetUsername:hover{
+            filter: drop-shadow(0 5px 5px #777);
+            transition: all 250ms;
+        }
+    </style>
+    <div id="page" class="main-container">
+
+        <section class="background">
+            <div class="overlay"></div>
+        </section>
+
+        <section class="wrapper">
+            <div class="login">
+                <div class="login-head">
+                    <div class="ribbon"></div>
+                    <div class="logo">
+                        <a class="site-name">
+                            <img src="images/logo.png" alt="Logo">
+                        </a>
+                        <span class="site-description">People Innovation Excellence
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="login-body">
+                    <form method="post" action="./LoginBinusian" id="form1" class="custom-form">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="GGMrFyVUuZ0GenoPnH/u3fqIzMlOSZUfchNC1bssGmeIDoMGvcX9iPD8Dr53gMpv6+qbQQC2eNrLuTaAUxh+4Q2yWxsNqgeQIYk2W4lRYN0=" />
+</div>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="BE653B8A" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="7r26I4ptR796kjErn+c5OczvjgH+MtNbZ0rIrNFsU/v7laAndufR+MGvJpe3Syw8N6QkGX/AEeCSsVYQruj2Xsu9u6xC3bUl1KfSJG5dqQApSoZMOAd15aBdMEWeoMWh" />
+</div>
+                        <p>
+                            <input type="submit" name="btnLoginSSO" value="" id="btnLoginSSO" class="button button-primary wide" />
+                            
+                            <a href="GetUsername.aspx" class="button button-primary wide" id="btnGetUsername">Get Your Username</a>
+                        </p>
+                    </form>
+                </div>
+                <div class="login-footer">
+                    
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- JavaScript -->
+    <script src="./js/jquery.js"></script>
+    <script src="./js/script.login.js"></script>
+</body>
+</html>
